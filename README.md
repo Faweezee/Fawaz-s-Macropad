@@ -2,11 +2,11 @@
 
 A custom 12-key macropad designed to increase productivity while programming or designing, built with the Seeed Xiao RP2040. This project was designed in KiCad (PCB) and Fusion 360 (Case).
 
-![Main Render]("C:\Users\USER\Desktop\Fawaz's Macropad-Files\Fawaz's_Macropad-V2_Render_png.png")
+![Main Render](img/Fawaz's_Macropad-V2_Render_png.png)
 
-|                                 Schematic                                 |                                PCB                                 |                                            Case                                            |
-| :-----------------------------------------------------------------------: | :----------------------------------------------------------------: | :----------------------------------------------------------------------------------------: |
-| ![Schematic]("C:\Users\USER\Desktop\Fawaz's Macropad-Files\F-M-Shcm.png") | ![PCB]("C:\Users\USER\Desktop\Fawaz's Macropad-Files\F-M-PCB.png") | ![Case]("C:\Users\USER\Desktop\Fawaz's Macropad-Files\Fawaz's_Macropad-V2_Render_png.png") |
+|           Schematic            |           PCB           |                   Case                    |
+| :----------------------------: | :---------------------: | :---------------------------------------: |
+| ![Schematic](img/F-M-Shcm.png) | ![PCB](img/F-M-PCB.png) | ![Case](img/Fawaz's%20Macropad-V2-TB.png) |
 
 ## Bill of Materials (BOM)
 
