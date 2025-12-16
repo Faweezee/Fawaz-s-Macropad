@@ -8,36 +8,24 @@ keyboard = KMKKeyboard()
 macros = Macros()
 keyboard.modules.append(macros)
 
-# --- PIN CONFIGURATION (CHECK YOUR SCHEMATIC!) ---
-# Columns: The vertical wires.
-keyboard.col_pins = (board.D6, board.D7, board.D8, board.D9) 
-# Rows: The horizontal wires.
+
+keyboard.col_pins = (board.D6, board.D7, board.D8, board.D9)
 keyboard.row_pins = (board.D0, board.D1, board.D2)
 
 keyboard.diode_orientation = DiodeOrientation.COL2ROW
 
 # --- KEYMAPPING ---
-# Translating your requests into KMK Keycodes:
-# Copy  = Ctrl + C
-# Paste = Ctrl + V
-# Cut   = Ctrl + X
-# Undo  = Ctrl + Z
-# Redo  = Ctrl + Y
-# Save All = Ctrl + Shift + S
-# Lock Screen = Win + L
-# Comment = Ctrl + /
-# Global Search = Ctrl + Shift + F (Standard VS Code search)
-# Win + Tab = Win + Tab
+# Row 1: Esc, Copy (Ctrl+C), Paste (Ctrl+V), Cut (Ctrl+X)
+# Row 2: Screenshot (PrintScreen), Undo (Ctrl+Z), Redo (Ctrl+Y), Save All (Ctrl+Shift+S)
+# Row 3: Lock Screen (Win+L), Comment (Ctrl+/), Search (Ctrl+F), Win+Tab
 
 keyboard.keymap = [
     [
-        # Row 1: Esc, Copy, Paste, Cut
+        # Row 1
         KC.ESC,    KC.LCTRL(KC.C),    KC.LCTRL(KC.V),    KC.LCTRL(KC.X),
-
-        # Row 2: Screenshot, Undo, Redo, Save All
+        # Row 2
         KC.PSCR,   KC.LCTRL(KC.Z),    KC.LCTRL(KC.Y),    KC.LCTRL(KC.LSFT(KC.S)),
-
-        # Row 3: Lock Screen, Comment, Global Search, Win+Tab
+        # Row 3
         KC.LGUI(KC.L), KC.LCTRL(KC.SLSH), KC.LCTRL(KC.LSFT(KC.F)), KC.LGUI(KC.TAB),
     ]
 ]
